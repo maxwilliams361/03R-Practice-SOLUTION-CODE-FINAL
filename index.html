@@ -1,0 +1,77 @@
+<!DOCTYPE html> <html><head>
+        <title>03.R Practice (SOLUTION CODE FINAL)</title>
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <style>.option-one-screen{
+    display:none;
+}
+
+.option-two-screen{
+    display:none;
+}
+
+
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Anton';
+}
+
+h1 {
+    text-align: center;
+}
+
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}</style></head>
+    <body>
+        <div class="title">
+            <h1>The Mysterious Box</h1>
+        </div>
+        <div class="story-opening">
+            <h2>It's late at night. You're walking and find a box in a empty alley way that's glowing.What do you do?</h2>
+            <img src="https://media.istockphoto.com/vectors/open-cardboard-box-with-a-glow-inside-vector-id641543500?k=20&amp;m=641543500&amp;s=612x612&amp;w=0&amp;h=aRGh-YqJbKFLn8dLSl7mAZpyRzbrQU8oqvgLrfkbems=">
+            <br>
+            <button class="option-one">Open the box!</button>
+            <br>
+            <button class="option-two">Run away!</button>
+        </div>
+
+        <div class="option-one-screen">
+            <hr>
+            <img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/111170/key_line_art_tiothy_Shiny_Key_2.png">
+            <h2> You open the box and see a shiny key and a set of directions. Click the key to see what the directions say!</h2>
+        </div>
+        <div class="option-two-screen">
+            <hr>
+            <img src="https://media.istockphoto.com/photos/the-man-standing-in-the-fog-evening-night-time-picture-id1060213698?k=20&amp;m=1060213698&amp;s=612x612&amp;w=0&amp;h=AlXFe3NK9HJI-c4X5sLQroEfmr-t76v5CCqq8VGR8Z0=">
+            <h2> As you run away you bump into someone. "What do you think you were doing over there?! You shouldn't be here!"Click the text to see what happens next.</h2>
+        </div>
+
+    
+<script>
+/*__POPCODESTART__*/
+var buttonOne = document.querySelector(".option-one");
+var openBoxDiv = document.querySelector(".option-one-screen");
+var buttonTwo = document.querySelector(".option-two");
+var runAwayDiv = document.querySelector(".option-two-screen");
+
+buttonOne.onclick = function () {
+  openBoxDiv.style.display = "block";
+};
+
+buttonTwo.onclick = function () {
+  runAwayDiv.style.display = "block";
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImJ1dHRvbk9uZSIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsIm9wZW5Cb3hEaXYiLCJidXR0b25Ud28iLCJydW5Bd2F5RGl2Iiwib25jbGljayIsInN0eWxlIiwiZGlzcGxheSJdLCJtYXBwaW5ncyI6IkFBQUEsSUFBSUEsU0FBUyxHQUFFQyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsYUFBdkIsQ0FBZjtBQUNBLElBQUlDLFVBQVUsR0FBQ0YsUUFBUSxDQUFDQyxhQUFULENBQXVCLG9CQUF2QixDQUFmO0FBQ0EsSUFBSUUsU0FBUyxHQUFDSCxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsYUFBdkIsQ0FBZDtBQUNBLElBQUlHLFVBQVUsR0FBQ0osUUFBUSxDQUFDQyxhQUFULENBQXVCLG9CQUF2QixDQUFmOztBQUlBRixTQUFTLENBQUNNLE9BQVYsR0FBa0IsWUFBVTtBQUN6QkgsRUFBQUEsVUFBVSxDQUFDSSxLQUFYLENBQWlCQyxPQUFqQixHQUF5QixPQUF6QjtBQUNGLENBRkQ7O0FBSUFKLFNBQVMsQ0FBQ0UsT0FBVixHQUFrQixZQUFVO0FBQ3hCRCxFQUFBQSxVQUFVLENBQUNFLEtBQVgsQ0FBaUJDLE9BQWpCLEdBQXlCLE9BQXpCO0FBQ0gsQ0FGRCIsInNvdXJjZXNDb250ZW50IjpbImxldCBidXR0b25PbmU9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLW9uZVwiKTtcbmxldCBvcGVuQm94RGl2PWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLW9uZS1zY3JlZW5cIik7XG5sZXQgYnV0dG9uVHdvPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLXR3b1wiKTtcbmxldCBydW5Bd2F5RGl2PWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub3B0aW9uLXR3by1zY3JlZW5cIik7XG5cblxuXG5idXR0b25PbmUub25jbGljaz1mdW5jdGlvbigpe1xuICAgb3BlbkJveERpdi5zdHlsZS5kaXNwbGF5PVwiYmxvY2tcIjtcbn07XG5cbmJ1dHRvblR3by5vbmNsaWNrPWZ1bmN0aW9uKCl7XG4gICAgcnVuQXdheURpdi5zdHlsZS5kaXNwbGF5PVwiYmxvY2tcIjtcbn07XG5cblxuIl19</script></body></html>
